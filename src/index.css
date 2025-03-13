@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'DepartureMono';
+  src: url('/src/assets/fonts/DepartureMono-Regular.woff2') format('woff2'),
+  url('/src/assets/fonts/DepartureMono-Regular.woff') format('woff'),
+  url('/src/assets/fonts/DepartureMono-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'DepartureMono', monospace !important;
+}
+
+.classic-mac {
+  font-family: inherit; /* Keep the font you already set */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.window {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+.title-bar {
+  background: linear-gradient(to right, #888, #ccc);
+  padding: 6px 8px;
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom: 1px solid #888;
+}
+
+.title-bar-text {
+  font-weight: bold;
+  color: #333;
+}
+
+.window-body {
+  background-color: #eee;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.memory-card {
+  transition: transform 0.3s ease;
+}
+
+.memory-card.flipped {
+  transform: rotateY(180deg);
+}
+
+.memory-card.matched {
+  transition: all 0.5s ease;
+}
+
+
