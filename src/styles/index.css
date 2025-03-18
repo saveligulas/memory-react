@@ -1,0 +1,17 @@
+.memory__card {
+  width: 220px;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 1.0s ease, box-shadow 0.7s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 2px 6px 6px darkgrey;
+  }
+}
+
+.memory__image {
+  aspect-ratio: 1 / 1;
+}
